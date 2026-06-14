@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesor de Técnicas de Estudio</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="card shadow">
+
+            <div class="card-body">
+
+                <h1 class="text-center mb-4">
+                    Asesor de Técnicas de Estudio
+                </h1>
+
+                <div class="mb-3">
+                    <label class="form-label">
+                        Días para el examen
+                    </label>
+
+                    <input
+                        type="number"
+                        id="diasParaExamen"
+                        class="form-control"
+                        min="1">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">
+                        Tiempo disponible por día
+                    </label>
+
+                    <select
+                        id="tiempoDisponible"
+                        class="form-select">
+
+                        <option value="MENOS_DE_UNA_HORA">
+                            Menos de una hora
+                        </option>
+
+                        <option value="ENTRE_UNA_Y_TRES">
+                            Entre una y tres horas
+                        </option>
+
+                        <option value="MAS_DE_TRES">
+                            Más de tres horas
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">
+                        Tipo de materia
+                    </label>
+
+                    <select
+                        id="tipoMateria"
+                        class="form-select">
+
+                        <option value="TEORICA">
+                            Teórica
+                        </option>
+
+                        <option value="PRACTICA">
+                            Práctica
+                        </option>
+
+                        <option value="MIXTA">
+                            Mixta
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">
+                        Nivel de conocimiento
+                    </label>
+
+                    <select
+                        id="nivelConocimiento"
+                        class="form-select">
+
+                        <option value="BAJO">
+                            Bajo
+                        </option>
+
+                        <option value="MEDIO">
+                            Medio
+                        </option>
+
+                        <option value="ALTO">
+                            Alto
+                        </option>
+
+                    </select>
+                </div>
+
+                <button
+                    id="btnRecomendar"
+                    class="btn btn-primary w-100">
+
+                    Generar Recomendación
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div
+            id="resultado"
+            class="mt-4">
+
+        </div>
+
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+
+</body>
+
+</html>

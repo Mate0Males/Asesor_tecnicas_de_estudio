@@ -1,0 +1,39 @@
+body {
+    background-color: #f4f6f9;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+#resultado .card {
+    transition: transform 0.2s ease;
+}
+
+#resultado .card:hover {
+    transform: translateY(-4px);
+}
+
+#resultado h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    padding: 12px;
+    font-weight: 600;
+}
